@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="miniProj" class="h-100">
+<head>
+  <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="src/fontawesome/css/all.min.css" />
+  <base href="/" />
+  <title ng-bind="'miniProj &mdash; ' + title">myApp</title>
+</head>
+<body  class="d-flex flex-column h-100" ng-controller="homeController">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-info">
+      <div class="container">
+        <a class="navbar-brand text-white" href="/">Just a small project</a>
+        <ul class="nav navbar-right">
+          <li class="nav-item"><a class="nav-link text-white" href="who"><i class="fa fa-id-card"></i> Who?</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="what"><i class="fa fa-user-secret"></i> What?</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="hobbies"><i class="fa fa-bed"></i> Hobbies?</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="project"><i class="fa fa-question"></i> Project</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+    <div ng-view></div>
+  </main>
+
+  <footer class="footer mt-auto py-3 bg-dark">
+    <nav>
+      <div class="container">
+        <ul class="nav navbar-footer justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="https://www.instagram.com/sandrogallina/" target="_blank">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="https://www.facebook.com/sandro.gallina.9" target="_blank">
+              <i class="fab fa-facebook-f fa-2x"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="https://www.linkedin.com/in/sandro-gallina/" target="_blank">
+              <i class="fab fa-linkedin-in fa-2x"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="https://twitter.com/menphys" target="_blank">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="https://sandrogallina.com/" target="_blank">
+              <i class="fas fa-wifi fa-2x"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="https://github.com/sg1984" target="_blank">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>      
+    </nav>
+  </footer>
+
+</body>
+<script src="src/angular/angular.min.js"></script>
+<script src="src/angular/angular-route.js"></script>
+<script src="src/fontawesome/js/all.min.js"></script>
+<script src="src/spa.js"></script>
+</html>
